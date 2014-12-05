@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Tetris
+    </title>
+    <link type="text/css" rel="stylesheet" href="tetris.css">
+    <link rel="icon" href="favicon.ico">
+  </head>
+  <body>
+    <section id="menu-view">
+      <div class="menu-view-message-container">
+      </div>
+    </section>
+    <section id="game-view" class="game-container">
+      <div id="wall-container">
+        <div id="notification-message-container">
+          <div id="notification-message">
+            <div class="sub-header">
+              Press any the Space Bar to start
+            </div>
+          </div>
+        </div>
+        <div id="wall">
+        </div>
+      </div>
+      <div id="info-container">
+        <div id="preview-container">
+            <label>
+              Next Shape
+            </label>
+            <div id="shape-preview">
+            </div>
+        </div>
+        <div id="stats-container">
+          <div class="score-container">
+            <label>Score: </label>
+            <div id="score">0</div>
+          </div>
+          <div class="lines-container">
+            <label>Lines: </label>
+            <div id="lines">0</div>
+          </div>
+          <div id="keyboard-instructions">
+            <header>Controls</header>
+            <div class="instruction">
+              <label>Move:</label>
+              <div>&larr; &darr; &rarr; </div>
+            </div>
+            <div class="instruction">
+              <label>Rotate:</label>
+              <div> &uarr;</div>
+            </div>
+            <div class="instruction">
+              <label>Pause:</lable>
+              <div>Esc</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="game-over-view">
+      <div class="game-over-message">
+        <header>
+          Game Over!
+        </header>
+        <div id="game-over-stats">
+        </div>
+        <div>
+          Thank you for playing. Press the Space Bar to play again.
+        </div>
+      </div>
+      <video id="game-over-video" width="630" height="426" preload="auto" src="game_over_video.mp4"></video>
+    </section>
+    <script src="state_machine.js"></script>
+    <script src="publisher.js"></script>
+    <script src="user_input.js"></script>
+    <script src="tetris_wall.js"></script>
+    <script src="tetris_shape.js"></script>
+    <script src="game_manager.js"></script>
+  </body>
+</html>
