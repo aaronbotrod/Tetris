@@ -1,7 +1,7 @@
 Tetris
 ======
 
-(Click here for demo)[http://aaronbotrod.github.io/Tetris/]
+[Click here for demo](http://aaronbotrod.github.io/Tetris/)
 
 After reading a job description that asked a person be proficient enough to be able to write tetris withtout any external code, I decided to give it a try. I Also figured I could build on it and display my experience using other tools and web technologies. I gave myself a time limit of a weekend. I got it functional. But I spent more time afterwards cleaning up code. Trying not to build on the logic any more and just cleaning and adding a bit of color. 
 
